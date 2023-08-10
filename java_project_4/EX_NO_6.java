@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 class Student {
     private String name;
-    private int registerNo;
+    private String registerNo;
     private String department;
     private double cgpa;
 
-    public Student(String name, int registerNo, String department, double cgpa) {
+    public Student(String name, String registerNo, String department, double cgpa) {
         this.name = name;
         this.registerNo = registerNo;
         this.department = department;
@@ -19,7 +19,7 @@ class Student {
         return name;
     }
 
-    public int getRegisterNo() {
+    public String getRegisterNo() {
         return registerNo;
     }
 
@@ -54,8 +54,7 @@ public class EX_NO_6 {
                         System.out.print("Enter Name: ");
                         String name = scanner.nextLine();
                         System.out.print("Enter Register No: ");
-                        int registerNo = scanner.nextInt();
-                        scanner.nextLine(); // Consume newline
+                        String registerNo = scanner.nextLine();
                         System.out.print("Enter Department: ");
                         String department = scanner.nextLine();
                         System.out.print("Enter CGPA: ");
